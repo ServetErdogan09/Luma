@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lume</string>
+    <string name="nav_timeline">Zaman Çizelgesi</string>
+    <string name="nav_search">Ara/Sor</string>
+    <string name="nav_daily_story">Gün Hikayesi</string>
+    <string name="nav_settings">Ayarlar</string>
+</resources>
