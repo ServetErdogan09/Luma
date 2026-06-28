@@ -1,10 +1,11 @@
 package com.serveterdogan.lume.data.local.entity
 
 import androidx.room.Entity
+import androidx.room.Index
 import androidx.room.PrimaryKey
 import java.time.LocalDate
 
-@Entity(tableName = "memory")
+@Entity(tableName = "memories" , indices = [Index(value = ["date"])])
 data class MemoryEntity(
     @PrimaryKey(autoGenerate = true)
     val id : Int,
