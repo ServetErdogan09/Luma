@@ -31,19 +31,19 @@ Lume, anılarınızı kaydetmeyi yepyeni bir seviyeye taşıyan akıllı bir gü
 Lume'un Aydınlık ve Karanlık moddaki görünümüne bir göz atın.
 
 <p align="center">
-  <img src="screenshots/light_home.jpg" alt="Lume Ana Ekran Aydınlık" width="30%" />
+  <img src="screenshots/light_home.jpeg" alt="Lume Ana Ekran Aydınlık" width="30%" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/light_detail.jpg" alt="Lume Anı Detay Aydınlık" width="30%" />
+  <img src="screenshots/light_detail.jpeg" alt="Lume Anı Detay Aydınlık" width="30%" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/light_story.jpg" alt="Lume Hikaye Aydınlık" width="30%" />
+  <img src="screenshots/light_story.jpeg" alt="Lume Hikaye Aydınlık" width="30%" />
 </p>
 <br/>
 <p align="center">
-  <img src="screenshots/dark_home.jpg" alt="Lume Ana Ekran Karanlık" width="30%" />
+  <img src="screenshots/dark_home.jpeg" alt="Lume Ana Ekran Karanlık" width="30%" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/dark_timeline.jpg" alt="Lume Zaman Tüneli Karanlık" width="30%" />
+  <img src="screenshots/dark_detail.jpeg" alt="Lume Anı Detay Karanlık" width="30%" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/dark_settings.jpg" alt="Lume Ayarlar Karanlık" width="30%" />
+  <img src="screenshots/dark_story.jpeg" alt="Lume Hikaye Karanlık" width="30%" />
 </p>
 <p align="center">
   <i>Lume'un farklı ekranlarındaki Aydınlık (Light) ve Karanlık (Dark) mod tasarımları</i>
