@@ -25,4 +25,10 @@ abstract class RepositoryModule {
     abstract fun bindDailySummaryRepository(
         dailySummaryImpl: DailySummaryRepositoryImpl
     ): DailySummaryRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindSettingsRepository(
+        settingsRepositoryImpl: com.serveterdogan.lume.data.repo.SettingsRepositoryImpl
+    ): com.serveterdogan.lume.domain.repository.SettingsRepository
 }

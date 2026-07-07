@@ -8,8 +8,10 @@ interface DailySummaryRepository {
 
     suspend fun insertDailySummary(dailySummary: DailySummary)
 
-    suspend fun getSummariesByDateRange(date : LocalDate): List<DailySummary>
+    suspend fun getSummaryByDate(date: LocalDate): List<DailySummary>
 
     fun getAllSummaries(): Flow<List<DailySummary>>
+    
+    suspend fun deleteOldSummaries(today: LocalDate)
 
 }

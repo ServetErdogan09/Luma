@@ -16,17 +16,19 @@ class DailySummaryRepositoryImpl @Inject constructor(
     override suspend fun insertDailySummary(dailySummary: DailySummary) {
       dao.insertDailySummary(dailySummary.toEntity())
     }
-    override suspend fun getSummariesByDateRange(date: LocalDate): List<DailySummary> {
-        return dao.getSummariesByDateRange(date = date).map { dailySummaryEntity ->
+    override suspend fun getSummaryByDate(date: LocalDate): List<DailySummary> {
+        return dao.getSummaryByDate(date = date).map { dailySummaryEntity ->
             dailySummaryEntity.toDomain()
         }
     }
 
     override fun getAllSummaries(): Flow<List<DailySummary>> {
-        return dao.getAllSummaries().map { liste->
-            liste.map { dailySummaryEntity ->
-                dailySummaryEntity.toDomain()
-            }
+        return dao.getAllSummaries().map { list ->
+            list.map { it.toDomain() }
         }
+    }
+    
+    override suspend fun deleteOldSummaries(today: LocalDate) {
+        dao.deleteOldSummaries(today)
     }
 }

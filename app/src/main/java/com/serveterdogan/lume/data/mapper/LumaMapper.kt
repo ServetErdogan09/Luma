@@ -12,6 +12,7 @@ fun MemoryEntity.toDomain() : Memory{
     return Memory(
         id = id,
         imagePath = imagePath,
+        title = title,
         aiDescription = aiDescription,
         time = time,
         tag = tag,
@@ -24,6 +25,7 @@ fun Memory.toEntity() : MemoryEntity{
     return MemoryEntity(
         id = id,
         imagePath = imagePath,
+        title = title,
         aiDescription = aiDescription,
         time = time,
         tag = tag,

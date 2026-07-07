@@ -1,7 +1,81 @@
 <resources>
     <string name="app_name">Lume</string>
-    <string name="nav_timeline">Zaman Çizelgesi</string>
+    <string name="nav_timeline">Zaman Tüneli</string>
+    <string name="home">Ana Sayfa</string>
     <string name="nav_search">Ara/Sor</string>
     <string name="nav_daily_story">Gün Hikayesi</string>
     <string name="nav_settings">Ayarlar</string>
+    <string name="title_luma">Luma</string>
+    <string name="content_desc_add_memory">Anı Ekle</string>
+    <string name="content_desc_search">Ara</string>
+    <string name="today">Bugün</string>
+    <string name="untitled_memory">Başlıksız Anı</string>
+    <string name="content_desc_back">Geri</string>
+    <string name="content_desc_ai_analysis">AI Analiz</string>
+    <string name="content_desc_selected_image">Seçilen Anı Görseli</string>
+    <string name="add_photo">Fotoğraf Ekle</string>
+    <string name="ai_title">AI Başlık</string>
+    <string name="title_placeholder">Bir başlık yazın...</string>
+    <string name="content_desc_edit">Düzenle</string>
+    <string name="ai_description">AI Açıklama</string>
+    <string name="description_placeholder">Anınızı detaylandırın...</string>
+    <string name="error_no_image">Anını kaydetmek için önce bir fotoğraf seçmelisin.</string>
+    <string name="error_no_title">Lütfen anına bir başlık yaz veya Lume\'un yazmasını bekle.</string>
+    <string name="tags">Etiketler</string>
+    <string name="content_desc_add_tag">Etiket Ekle</string>
+    <string name="save">Kaydet</string>
+    <string name="edit">Düzenle</string>
+    <string name="content_desc_delete">Sil</string>
+    <string name="similar_memories">Benzer Anılar</string>
+    <string name="see_all">Tümünü Gör</string>
+    <string name="share">Paylaş</string>
+    <string name="share_memory">Anıyı Paylaş</string>
+    
+    <string name="delete_memory_title">Anıyı Sil</string>
+    <string name="delete_memory_desc">Bu anıyı silmek istediğinize emin misiniz? Bu işlem geri alınamaz.Bu değerli anı kalıcı olarak Luma Hafızasından silinecektir.</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_cancel">İptal</string>
+    
+    <string name="search_placeholder">Anılarda ara (örn: kahve)</string>
+    <string name="search_no_results_title">Sonuç Bulunamadı 😔</string>
+    <string name="search_no_results_desc">\'%1$s\' ile eşleşen bir anı yok.</string>
+    <string name="search_empty_state">Aramak için kelime girin</string>
+    
+    <!-- Günün Hikayesi -->
+    <string name="daily_story_title">Günün Hikayesi</string>
+    <string name="ai_summary_title">YAPAY ZEKA\nÖZETİ</string>
+    <string name="daily_story_not_created">Günün hikayesi henüz oluşturulmadı.</string>
+    <string name="create_my_story">Hikayemi Oluştur</string>
+    <string name="edit_story_title">Hikayeyi Düzenle</string>
+    
+    <!-- Anı Arşivi -->
+    <string name="archive_title">Anı Arşivi</string>
+    <string name="unforgettables">Unutulmayanlar</string>
+    <string name="last_memory">SON ANI</string>
+    <!-- Ayarlar Ekranı -->
+    <string name="settings_privacy">GİZLİLİK</string>
+    <string name="settings_save_memories">Galeriye Kaydet</string>
+    <string name="settings_save_memories_desc">Luma\'ya eklediğiniz fotoğrafların bir kopyası otomatik olarak telefonunuzun galerisine de kaydedilir.</string>
+    <string name="settings_ai_analysis">Yapay Zeka (AI) Asistanı</string>
+    <string name="settings_ai_analysis_desc">Açık olduğunda, yapay zeka eklediğiniz fotoğrafları analiz ederek size otomatik başlık ve notlar önerir.</string>
+    <string name="settings_notifications">Günlük Hatırlatıcı</string>
+    <string name="settings_notifications_desc">Her akşam saat 21:00\'de günün hikayesini yazmanız için size hatırlatma bildirimi gönderir.</string>
+    <string name="settings_dark_mode">Karanlık Mod</string>
+    <string name="settings_dark_mode_desc">Göz yormayan karanlık tema arayüzüne geçiş yapın.</string>
+    
+    <string name="settings_data">VERİ</string>
+    <string name="settings_export_data">Veriyi Dışa Aktar</string>
+    <string name="settings_export_data_desc">Anılarını yedekle</string>
+    <string name="settings_delete_all">Tüm Anıları Sil</string>
+    <string name="settings_delete_all_desc">Tüm verilerinizi kalıcı olarak siler</string>
+    
+    <string name="settings_app">UYGULAMA</string>
+    <string name="settings_about">Hakkında</string>
+    <string name="settings_version">Version 1.0.0</string>
+    <string name="settings_feedback">Geri Bildirim Gönder</string>
+    <string name="settings_app_size">Uygulama Boyutu</string>
+    <string name="feature_coming_soon_export">Dışa aktarma özelliği yakında eklenecek!</string>
+    <string name="feature_coming_soon_feedback">Geribildirim özelliği yakında eklenecek!</string>
+    <string name="delete_all_memories_dialog_desc">Tüm anılarınızı silmek istediğinize emin misiniz? Bu işlem geri alınamaz.</string>
+    <string name="delete_all_memories_success">Tüm anılar başarıyla silindi.</string>
 </resources>

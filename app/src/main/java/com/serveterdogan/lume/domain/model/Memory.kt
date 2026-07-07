@@ -8,6 +8,7 @@ data class Memory(
     val date  : LocalDate,
     val time : String,
     val tag : String,
+    val title: String,
     val aiDescription : String
 )
 

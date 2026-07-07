@@ -32,6 +32,12 @@ class MemoryRepositoryImpl @Inject constructor (
 
     }
 
+    override fun getMemoriesByDateFlow(date: LocalDate): Flow<List<Memory>> {
+        return dao.getMemoriesByDateFlow(date).map { list ->
+            list.map { it.toDomain() }
+        }
+    }
+
     override fun getAllMemories(): Flow<List<Memory>> {
         return dao.getAllMemories().map { memoryEntities ->
             memoryEntities.map { entity ->
@@ -48,11 +54,29 @@ class MemoryRepositoryImpl @Inject constructor (
         dao.deleteMemoryById(id)
     }
 
+    override suspend fun deleteAllMemories() {
+        dao.deleteAllMemories()
+    }
+
     override suspend fun searchMemories(searchQuery: String): List<Memory> {
         return dao.searchMemories(searchQuery).map { entity ->
             entity.toDomain()
         }
     }
 
+    override suspend fun getSimilarMemories(tags: List<String>, excludeId: Int): List<Memory> {
+        if (tags.isEmpty()) return emptyList()
+        val tag1 = tags.getOrElse(0) { "UNLIKELY_MATCH_STRING_123" }
+        val tag2 = tags.getOrElse(1) { "UNLIKELY_MATCH_STRING_123" }
+        val tag3 = tags.getOrElse(2) { "UNLIKELY_MATCH_STRING_123" }
+        return dao.getSimilarMemories(tag1, tag2, tag3, excludeId).map { it.toDomain() }
+    }
 
+    override suspend fun getAllSimilarMemories(tags: List<String>, excludeId: Int): List<Memory> {
+        if (tags.isEmpty()) return emptyList()
+        val tag1 = tags.getOrElse(0) { "UNLIKELY_MATCH_STRING_123" }
+        val tag2 = tags.getOrElse(1) { "UNLIKELY_MATCH_STRING_123" }
+        val tag3 = tags.getOrElse(2) { "UNLIKELY_MATCH_STRING_123" }
+        return dao.getAllSimilarMemories(tag1, tag2, tag3, excludeId).map { it.toDomain() }
+    }
 }
