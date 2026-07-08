@@ -47,7 +47,8 @@
             android:theme="@style/Theme.Lume.Transparent"
             android:excludeFromRecents="true"
             android:noHistory="true"
-            android:taskAffinity="">
+            android:taskAffinity=""
+            tools:targetApi="26">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -59,7 +60,8 @@
         <service
             android:name=".ui.screen.add_edit.AutoSaveMemoryService"
             android:exported="false"
-            android:foregroundServiceType="dataSync" />
+            android:foregroundServiceType="dataSync"
+            tools:targetApi="26" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

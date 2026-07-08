@@ -18,6 +18,7 @@ import com.google.ai.client.generativeai.type.content
 import com.serveterdogan.lume.BuildConfig
 import com.serveterdogan.lume.MainActivity
 import com.serveterdogan.lume.R
+import com.serveterdogan.lume.data.remote.OpenAIApiService
 import com.serveterdogan.lume.domain.model.Memory
 import com.serveterdogan.lume.domain.repository.MemoryRepository
 import com.serveterdogan.lume.navigation.Screen
@@ -32,6 +33,7 @@ import java.io.File
 import java.time.LocalDate
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
+import java.util.concurrent.atomic.AtomicInteger
 import javax.inject.Inject
 
 /**
@@ -51,10 +53,10 @@ class AutoSaveMemoryService : Service() {
     lateinit var memoryRepository: MemoryRepository
 
     @Inject
-    lateinit var openAIApiService: com.serveterdogan.lume.data.remote.OpenAIApiService
+    lateinit var openAIApiService: OpenAIApiService
 
     private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
-    private val activeTasks = java.util.concurrent.atomic.AtomicInteger(0)
+    private val activeTasks = AtomicInteger(0)
 
     companion object {
         const val EXTRA_IMAGE_URI = "extra_image_uri"

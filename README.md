@@ -49,12 +49,15 @@ Lume'un Aydınlık ve Karanlık moddaki görünümüne bir göz atın.
   <i>Lume'un farklı ekranlarındaki Aydınlık (Light) ve Karanlık (Dark) mod tasarımları</i>
 </p>
 
-## 🏗 Mimari
+## 🏗 Mimari & Teknik Altyapı
 
-Lume, resmi **Modern Android Uygulama Mimarisi (Modern Android Architecture)** yönergelerine tam olarak uymaktadır:
-- **Kullanıcı Arayüzü (UI Layer)**: Ekran durumlarını (state) yöneten ViewModel'lar ve Jetpack Compose tasarımları.
-- **Veri Katmanı (Data Layer)**: Veri kaynaklarını yöneten Repository katmanları (Yerel veriler için Room, API'ler için Retrofit).
-- **Bağımlılık Enjeksiyonu (DI)**: Uygulama yaşam döngüsü boyunca nesnelerin ve bağımlılıkların Dagger Hilt ile yönetimi.
+Lume, ölçeklenebilir ve test edilebilir bir yapı sunmak için aşağıdaki modern prensipler üzerine inşa edilmiştir:
+
+- **MVVM** ve **Clean Architecture**: Katmanlı mimari (Domain, Data, UI) sayesinde sürdürülebilir ve test edilebilir kod yapısı.
+- **Hilt (Dependency Injection)**: Uygulama genelinde modüler bağımlılık yönetimi.
+- **Room DB**: Çevrimdışı öncelikli (Offline-first) stratejisi ve güçlü SQL sorguları ile veri kalıcılığı.
+- **Kotlin Coroutines & StateFlow (UDF)**: Unidirectional Data Flow prensibine dayalı asenkron state yönetimi ve reaktif UI güncellemeleri.
+- **Google ML Kit OCR & OpenAI Hybrid Vision API Integration**: Karmaşık AI analizlerini arka planda (Foreground Service vb.) güvenle yürüten ileri seviye entegrasyonlar.
 
 ## ⚙️ Kurulum & Çalıştırma
 

@@ -13,7 +13,7 @@ import java.time.LocalDate
 interface MemoryDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertMemory(memory: MemoryEntity)
+     fun insertMemory(memory: MemoryEntity)
 
     @Update
     suspend fun updateMemory(memory: MemoryEntity)
